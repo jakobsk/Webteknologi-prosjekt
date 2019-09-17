@@ -5,6 +5,8 @@ h1 {
 body {
   color : white;
   background-color: black;
+  margin: 0 auto;
+  width: 800px;
 }
 p {
   font-family: "Times New Roman";
