@@ -14,3 +14,8 @@ img{
 p {
   font-family: "Times New Roman";
 }
+li span{
+  display:block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
