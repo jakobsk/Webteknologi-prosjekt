@@ -8,10 +8,9 @@ body {
   margin: 0 auto;
   width: 800px;
 }
+img{
+  width: 100%
+}
 p {
   font-family: "Times New Roman";
-}
-img {
-  border: 1px solid red;
-  max-width: 150px;
 }
