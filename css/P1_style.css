@@ -1,0 +1,15 @@
+h1 {
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body {
+  color : white;
+  background-color: black;
+}
+p {
+  font-family: "Times New Roman";
+}
+img {
+  border: 1px solid red;
+  max-width: 150px;
+}
