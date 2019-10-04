@@ -1,0 +1,21 @@
+h1 {
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body {
+  color : white;
+  background-color: black;
+  margin: 0 auto;
+  width: 800px;
+}
+img{
+  width: 100%
+}
+p {
+  font-family: "Times New Roman";
+}
+li span{
+  display:block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
