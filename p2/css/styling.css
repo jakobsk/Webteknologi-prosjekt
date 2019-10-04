@@ -8,8 +8,16 @@ body {
   margin: 0 auto;
   width: 800px;
 }
-img{
+
+#content img{
+  border: 1px solid white;
   width: 100%
+
+}
+
+img {
+  width: 100%
+
 }
 p {
   font-family: "Times New Roman";
