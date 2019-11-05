@@ -3,7 +3,17 @@ body {
 	background-color: black;
 	margin: 0 auto;
 	width: 880px;
+  border: 2px solid white;
+  border-width: thin;
+  border-radius: 20px; 
 }
+
+header img{
+  border-top-right-radius: 22px;
+  border-top-left-radius: 22px;
+}
+
+
 
 img {
 	width:100%;
