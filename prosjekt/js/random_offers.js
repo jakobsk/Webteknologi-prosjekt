@@ -16,9 +16,9 @@ function random(){
 	}
 	
 	taken.push(i);
-	document.getElementById("1").src= offers[i].picture;
-	document.getElementById("2").innerHTML= offers[i].name;
-	document.getElementById("3").innerHTML= offers[i].offer;
+	document.getElementById("r1").src= offers[i].picture;
+	document.getElementById("r2").innerHTML= offers[i].name;
+	document.getElementById("r3").innerHTML= offers[i].offer;
 
 
 	for (var x = 0; x < 990; x++) {
@@ -28,9 +28,9 @@ function random(){
 		}
 	}
 	taken.push(i);
-	document.getElementById("4").src= offers[i].picture;
-	document.getElementById("5").innerHTML= offers[i].name;
-	document.getElementById("6").innerHTML= offers[i].offer;
+	document.getElementById("r4").src= offers[i].picture;
+	document.getElementById("r5").innerHTML= offers[i].name;
+	document.getElementById("r6").innerHTML= offers[i].offer;
 
 	for (var x = 0; x < 990; x++) {
 		var i =  Math.floor(Math.random() * offers.length);
@@ -39,9 +39,9 @@ function random(){
 		}
 	}
 	taken.push(i);
-	document.getElementById("7").src= offers[i].picture;
-	document.getElementById("8").innerHTML= offers[i].name;
-	document.getElementById("9").innerHTML= offers[i].offer;
+	document.getElementById("r7").src= offers[i].picture;
+	document.getElementById("r8").innerHTML= offers[i].name;
+	document.getElementById("r9").innerHTML= offers[i].offer;
 
 
 }
