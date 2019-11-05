@@ -1,68 +1,77 @@
-var database = {
-  item_1 : {
+var database = [
+   {
+    name : 'football_1',
     id : 1,
-    name : "Random navn",
+    name : "Rød fotballsko",
     picture : "../img/fotballsko1.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
-  item_2 : {
+  {
+    name : 'football_2',
     id : 2,
-    name : "Random navn",
+    name : "Grå og oransje fotballsko",
     picture : "../img/fotballsko2.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
-  item_3 : {
+  {
+    name : 'football_3',
     id : 3,
-    name : "Random navn",
-    picture : "../img/fotballsko3.jpg",
+    name : "Neon fotballsko",
+    picture : "../img/fotballsko3.webp",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
-  item_4 : {
+  {
+    name :   'run_1',
     id : 4,
-    name : "Random navn",
-    picture : "../img/fotballsko1.jpg",
+    name : "Hvit løpesko",
+    picture : "../img/run1.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
-  item_5 : {
+  {
+    name : 'run_2',
     id : 5,
-    name : "Random navn",
-    picture : "../img/fotballsko1.jpg",
+    name : "Rød løpesko",
+    picture : "../img/run2.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
-  item_6 : {
+  {
+    name : 'run_3',
     id : 6,
-    name : "Random navn",
-    picture : "../img/fotballsko1.jpg",
+    name : "Blå løpesko",
+    picture : "../img/run3.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
-  item_7 : {
+  {
+    name : 'tennis_1',
     id : 7,
-    name : "Random navn",
-    picture : "../img/fotballsko1.jpg",
+    name : "Tennisrackets",
+    picture : "../img/tennis1.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
-  item_8 : {
+  {
+    name : 'tennis_2',
     id : 8,
-    name : "Random navn",
-    picture : "../img/fotballsko1.jpg",
+    name : "Tennisballer rør",
+    picture : "../img/tennis2.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
-  item_9 : {
+  {
+    name : 'tennis_3',
     id : 9,
-    name : "Random navn",
-    picture : "../img/fotballsko1.jpg",
+    name : "Tennisballer Boks",
+    picture : "../img/tennis3.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   }
-}
+]
 
 
 function addToCart(id){
