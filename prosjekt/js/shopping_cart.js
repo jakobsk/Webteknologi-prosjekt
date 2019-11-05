@@ -88,7 +88,7 @@ function getCart(){
     var text = document.createTextNode(cart[i]+'   ');
     var button = document.createElement("button");
     button.innerText = "Delete this";
-    button.onclick = deleteItem(this.id);
+    button.onclick = deleteItem;
     li.appendChild(text);
     li.appendChild(button);
     ul.appendChild(li);
@@ -97,6 +97,9 @@ function getCart(){
 
 function deleteItem(id){
   var ul = document.getElementById('shoppingcart_list');
+  cart = JSON.parse(sessionStorage.getItem('cart_session'));
+  console.log(id);
+  cart = cart.filter(item => item != 1);
   console.log('slett element');
-
+  location.reload();
 }
