@@ -18,6 +18,14 @@ header img{
 img {
 	width:100%;
 }
+#mailto {
+	color: white;
+}
+#shoppingcart{
+	max-height:30px;
+	max-width: 30px;
+	text-align: right;
+}
 
 .navbar {
   overflow: hidden;
