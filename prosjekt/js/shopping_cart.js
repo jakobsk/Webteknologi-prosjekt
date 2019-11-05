@@ -1,12 +1,21 @@
-var cart = ['Hest','Fisk'];
+
 function addToCart(id){
-  console.log('Denne blir aktivert');
-  var objekt_id =  id;
-  cart.push(objekt_id);
-  console.log(cart);
+  var objekt_id =  parseInt(id);
+
+  var cart_session = sessionStorage.getItem('cart_session');
+  if(!cart_session){
+    cart_session = [];
+  } else{
+    cart_session = JSON.parse(cart_session);
+  }
+  cart_session.push(objekt_id);
+  sessionStorage.setItem('cart_session',JSON.stringify(cart_session));
 }
+
+
+
 function getCart(){
-  console.log(cart);
+  cart = JSON.parse(sessionStorage.getItem('cart_session'));
   var ul = document.getElementById('shoppingcart_list');
   for (var i = 0; i < cart.length; i++) {
     var li = document.createElement('LI');
@@ -19,6 +28,7 @@ function getCart(){
     ul.appendChild(li);
   }
 }
+
 function deleteItem(id){
   var ul = document.getElementById('shoppingcart_list');
   console.log('slett');
