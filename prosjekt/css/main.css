@@ -86,6 +86,14 @@ img {
   display: block;
 }
 
+#about_us{
+  margin-left: 3%
+}
+
+
+#founders h2{
+  margin-left: 3%;
+}
 
 .row {
   display: flex;

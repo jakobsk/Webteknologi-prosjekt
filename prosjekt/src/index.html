@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
-<body>
+<body onload="random()">
 	<header>
 		<img src="../img/logo.png" alt="The logo of XXXL">
 	</header>
@@ -24,5 +24,34 @@
 		<a href="contact.html">Contact us</a>
 		<a href="shopping_cart.html"> <img id="shoppingcart" src="../img/shoppingcart.png" alt="Shopping cart logo"></a>
 	</div>
+
+	<div class="header">
+		<h1 id="randomoffers" style="text-align: center"> RANDOM OFFERS </h1>
+	<div>
+			
+		</div>
+	<div class ="row">
+		<div class="column">
+			<img src="../img/fotballsko1.jpg" id="1" alt="offer">
+			<h3 id="2">Name </h3>
+			<p id="3">Prosent</p>
+			<button class="addToCart" id="1" onClick="addToCart(this.id)">Add to Shopping cart</button>
+		</div>
+		<div class="column">
+			<img src="../img/fotballsko2.jpg" id="4" alt="fotball shoe">
+			<h3 id="5">Example name bla bla</h3>
+			<p id="6">Some fake description of the fotball shoe. Sldkjas d laksjd ewqkje q</p>
+			<button class="addToCart" id="2" onClick="addToCart(this.id)">Add to Shopping cart</button>
+		</div>
+		<div class="column">
+			<img src="../img/fotballsko4.jpg"  id="7" alt="fotball shoe">
+			<h3 id="8">Example name bla bla</h3>
+			<p id="9">Some fake description of the fotball shoe. Sldkjas d laksjd ewqkje q</p>
+			<button class="addToCart" id="3" onClick="addToCart(this.id)">Add to Shopping cart</button>
+		</div>
+	</div>
+
+	<script src="../js/random_offers.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
+
 </html>
