@@ -4,8 +4,9 @@
 	<title>IT2805 project: XXXL some sports united</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/shopping_cart.js"></script>
 </head>
-<body>
+<body onload="getCart()">
 	<header>
 		<img src="../img/logo.png" alt="The logo of XXXL">
 	</header>
@@ -13,8 +14,7 @@
 		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
 		<div class="dropdown">
-			<button class="dropbtn">Categories <i class="fa fa-caret-down"></i>
-			</button>
+			<button class="dropbtn">Categories <i class="fa fa-caret-down"></i></button>
 			<div class="dropdown-content">
 				<a href="football.html">Football</a>
       	<a href="running.html">Running</a>
@@ -23,6 +23,10 @@
 		</div>
 		<a href="contact.html">Contact us</a>
 		<a href="#"> <img id="shoppingcart" src="../img/shoppingcart.png" alt="Shopping cart logo"></a>
+	</div>
+	<div>
+		<h2>Your shopping cart contains:</h2>
+		<ul id='shoppingcart_list'></ul>
 	</div>
 </body>
 </html>
