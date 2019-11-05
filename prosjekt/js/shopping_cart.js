@@ -85,21 +85,27 @@ function getCart(){
   var ul = document.getElementById('shoppingcart_list');
   for (var i = 0; i < cart.length; i++) {
     var li = document.createElement('LI');
-    var text = document.createTextNode(cart[i]+'   ');
+    var text = document.createTextNode(cart[i]);
+    let numb = cart[i];
     var button = document.createElement("button");
     button.innerText = "Delete this";
-    button.onclick = deleteItem;
+    button.onclick = deleteItem.bind(numb);
     li.appendChild(text);
     li.appendChild(button);
     ul.appendChild(li);
   }
 }
 
-function deleteItem(id){
+function deleteItem(){
   var ul = document.getElementById('shoppingcart_list');
   cart = JSON.parse(sessionStorage.getItem('cart_session'));
-  console.log(id);
-  cart = cart.filter(item => item != 1);
-  console.log('slett element');
+  let removed = 0;
+  for (var i = 0; i < cart.length; i++) {
+    if(cart[i]==this && removed==0){
+      cart.splice(i,1);
+      removed=1;
+    }
+  }
+  sessionStorage.setItem('cart_session',JSON.stringify(cart));
   location.reload();
 }
