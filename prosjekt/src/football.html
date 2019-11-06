@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<script type="text/javascript" src="../js/shopping_cart.js"></script>
 </head>
-<body>
+<body onload="loadFootballShoes()">
 	<header>
 		<img src="../img/logo.png" alt="The logo of XXXL">
 	</header>
@@ -27,21 +27,21 @@
 	</div>
 	<div class ="row">
 		<div class="column">
-			<img src="../img/fotballsko1.jpg" id="skoe1" alt="fotball shoe">
-			<h3>Example name bla bla</h3>
-			<p>Some fake description of the fotball shoe. Sldkjas d laksjd ewqkje q</p>
+			<img src="../img/fotballsko1.jpg" id="fsko1" alt="fotball shoe">
+			<h3 id="fname1">--</h3>
+			<p id="fdesc1">Veldig gode sko</p>
 			<button class="addToCart" id="1" onClick="addToCart(this.id)">Add to Shopping cart</button>
 		</div>
 		<div class="column">
-			<img src="../img/fotballsko2.jpg" alt="fotball shoe">
-			<h3>Example name bla bla</h3>
-			<p>Some fake description of the fotball shoe. Sldkjas d laksjd ewqkje q</p>
+			<img src="../img/fotballsko2.jpg"  id="fsko2" alt="fotball shoe">
+			<h3 id="fname2">Grå og oransje fotballsko</h3>
+			<p id="fdesc2">Ekstreme sko</p>
 			<button class="addToCart" id="2" onClick="addToCart(this.id)">Add to Shopping cart</button>
 		</div>
 		<div class="column">
-			<img src="../img/fotballsko4.jpg" alt="fotball shoe">
-			<h3>Example name bla bla</h3>
-			<p>Some fake description of the fotball shoe. Sldkjas d laksjd ewqkje q</p>
+			<img src="../img/fotballsko3.jpg" id="fsko3" alt="fotball shoe">
+			<h3 id="fname3">Hvit løpesko</h3>
+			<p id="fdesc3">Noen nice shoes</p>
 			<button class="addToCart" id="3" onClick="addToCart(this.id)">Add to Shopping cart</button>
 		</div>
 	</div>

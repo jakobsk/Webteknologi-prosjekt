@@ -19,7 +19,7 @@ var database = [
     name : 'football_3',
     id : 3,
     name : "Neon fotballsko",
-    picture : "../img/fotballsko3.webp",
+    picture : "../img/fotballsko3.jpg",
     price : "100kr",
     description : "En fake tekst om produktet"
   },
@@ -110,6 +110,77 @@ function getCart(){
     ul.appendChild(li);
   }
 }
+
+function loadFootballShoes(){
+
+  var idp = "fsko1";
+  var idn = "fname1";
+  var idd = "fdesc1";
+  var count = 1;
+
+  for(var i = 1; i <= 3; i++){
+  document.getElementById(idp).src= database[i-1].picture;
+  document.getElementById(idn).innerHTML= database[i-1].name;
+  document.getElementById(idd).innerHTML=  database[i-1].description;
+  idp = idp.substring(0, idp.length - 1);
+  idn = idn.substring(0, idn.length - 1);
+  idd = idd.substring(0, idd.length - 1);
+  count++;
+  idp += ""+count;
+  idn += ""+count;
+  idd += ""+count;
+
+}
+
+  }
+
+
+  function loadTennis(){
+
+  var idp = "tpic1";
+  var idn = "tname1";
+  var idd = "tdesc1";
+  var count = 1;
+
+  for(var i = 7; i <= 9; i++){
+  document.getElementById(idp).src= database[i-1].picture;
+  document.getElementById(idn).innerHTML= database[i-1].name;
+  document.getElementById(idd).innerHTML=  database[i-1].description;
+  idp = idp.substring(0, idp.length - 1);
+  idn = idn.substring(0, idn.length - 1);
+  idd = idd.substring(0, idd.length - 1);
+  count++;
+  idp += ""+count;
+  idn += ""+count;
+  idd += ""+count;
+
+}
+
+  }
+
+
+  function loadRun(){
+
+  var idp = "rpic1";
+  var idn = "rname1";
+  var idd = "rdesc1";
+  var count = 1;
+
+  for(var i = 4; i <= 6; i++){
+  document.getElementById(idp).src= database[i-1].picture;
+  document.getElementById(idn).innerHTML= database[i-1].name;
+  document.getElementById(idd).innerHTML=  database[i-1].description;
+  idp = idp.substring(0, idp.length - 1);
+  idn = idn.substring(0, idn.length - 1);
+  idd = idd.substring(0, idd.length - 1);
+  count++;
+  idp += ""+count;
+  idn += ""+count;
+  idd += ""+count;
+
+}
+
+  }
 
 function deleteItem(){
   var ul = document.getElementById('shoppingcart_list');
