@@ -105,6 +105,9 @@ function getCart(){
     var product_name = document.createElement("H3");
     product_name.innerText = product.name;
 
+    var product_price = document.createElement("H4");
+    product_price.innerText = product.price;
+
     var product_description = document.createElement("P");
     product_description.innerText = product.description;
     product_description.class = "image_descriptor";
@@ -117,6 +120,7 @@ function getCart(){
 
     li.appendChild(img);
     li.appendChild(product_name);
+    li.appendChild(product_price);
     li.appendChild(product_description);
     li.appendChild(button);
     ul.appendChild(li);

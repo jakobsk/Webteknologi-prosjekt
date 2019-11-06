@@ -126,11 +126,17 @@ img {
   width: 50%;
 }
 
-#shoppingcart_list li h3,p{
+#shoppingcart_list li h3,h4,p{
   float:left;
   width: 205px;
+  height: 20px;
 }
 
+
+h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 #deleteButton {
   width: 40px;
