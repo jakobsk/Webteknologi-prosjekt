@@ -76,7 +76,7 @@ var database = [
 
 function addToCart(id){
   var objekt_id =  parseInt(id);
-
+  alert("Added item to shopping cart");
   var cart_session = sessionStorage.getItem('cart_session');
   if(!cart_session){
     cart_session = [];
