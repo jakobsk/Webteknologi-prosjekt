@@ -13,7 +13,7 @@ var database = [
     name : "Grå og oransje fotballsko",
     picture : "../img/fotballsko2.jpg",
     price : "100kr",
-    description : "En fake tekst om produktet"
+    description : "En fake tekst om produktet En fake tekst om produktet En fake tekst om produktet" 
   },
   {
     name : 'football_3',
@@ -101,11 +101,23 @@ function getCart(){
     img.setAttribute("width", "50%");
     img.setAttribute("height", "50%");
     img.setAttribute("alt", product.name);
+
+    var product_name = document.createElement("H3");
+    product_name.innerText = product.name;
+
+    var product_description = document.createElement("P");
+    product_description.innerText = product.description;
+    product_description.class = "image_descriptor";
+
     let numb = cart[i];
     var button = document.createElement("button");
-    button.innerText = "Delete this";
+
+    button.id = "deleteButton";
     button.onclick = deleteItem.bind(numb);
+
     li.appendChild(img);
+    li.appendChild(product_name);
+    li.appendChild(product_description);
     li.appendChild(button);
     ul.appendChild(li);
   }
