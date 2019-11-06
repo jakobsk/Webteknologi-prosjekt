@@ -93,13 +93,19 @@ function getCart(){
   cart = JSON.parse(sessionStorage.getItem('cart_session'));
   var ul = document.getElementById('shoppingcart_list');
   for (var i = 0; i < cart.length; i++) {
+    let index = cart[i]
+    let product = database[index-1]
     var li = document.createElement('LI');
-    var text = document.createTextNode(cart[i]);
+    var img = document.createElement("IMG");
+    img.setAttribute("src", product.picture);
+    img.setAttribute("width", "50%");
+    img.setAttribute("height", "50%");
+    img.setAttribute("alt", product.name);
     let numb = cart[i];
     var button = document.createElement("button");
     button.innerText = "Delete this";
     button.onclick = deleteItem.bind(numb);
-    li.appendChild(text);
+    li.appendChild(img);
     li.appendChild(button);
     ul.appendChild(li);
   }
