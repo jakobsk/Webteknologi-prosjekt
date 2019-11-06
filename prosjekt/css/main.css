@@ -111,5 +111,38 @@ img {
 .inline-block{
   display: inline-block;
   text-align: center;
+}
 
+#shoppingcart_list li{
+  list-style: none;
+  display: inline-block;
+  width: 90%;
+  margin: 1em 0;
+}
+
+#shoppingcart_list li img{
+  float:left;
+  margin-right: 20px;
+  width: 50%;
+}
+
+#shoppingcart_list li h3,h4,p{
+  float:left;
+  width: 205px;
+  height: 20px;
+}
+
+
+h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#deleteButton {
+  width: 40px;
+  border: none;
+  height: 40px;
+  margin-left: 100px;
+  margin-top: 80px;
+  background: url(../img/deleteButton.png);
 }
