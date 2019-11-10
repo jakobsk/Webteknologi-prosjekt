@@ -13,6 +13,9 @@
             <h2>10. November 2019</h2>
         </div>
         <hr>
+        <div id='link'>
+          <p>Link to project website <a href="https://folk.ntnu.no/torgesla/prosjekt/src/">HERE</a></p>
+        </div>
         <div id = 'fulfilled'>
             <h2>Quick overview of distribution of workload:</h2>
             <p>
@@ -22,7 +25,6 @@
                 Torgeir has mostly written JavaScript code, but also some HTML
                 The whole team has written CSS specific for the page they have been working on, CSS is mostly written in a shared CSS file(main.css), but also some inline CSS in the HTML files where this has been more natural.
             </p>
-
             <h2>How each of the team members fulfilled their minimum requirements:</h2>
             <p>
               All minimum requirements are met. Through out the development process we made design decisions resulting in e.g form validation solely being done through specifications of the form and input tag since this resulted in the wanted behavior.
@@ -45,229 +47,8 @@
               In P2 we planned to write a file autofill_content.js, this was suposed to contain functionality for modularity.
               This was mainly going to be used on the three catergories pages which has a similar structure, but contains different products(product objects).
               We decided that it was easier to bug track and unnecessary to use html generative javascript for three html files.<br>
-              The exact design and content of each page may have been changed, since the specifications in P2 was written before we got a hands-on experience with coding in html,
+              The exact design and content of each page may have been changed, since the specifications in P2 was written before we got a hands-on experience with coding a larger project in HTML and Javascript.
             </p>
         </div>
-
-        <div id = "content">
-            <h2>Content</h2>
-            <ol>
-              <li><span class="title">"Front page - front_page.html"</span>
-                The front page is the landing page of the website. It will contain selected offers that will be selected randomly each time a user loads the front page. The random selection will be done with javascript
-
-                <figure><img src="img/front_page.png" alt="Front page"></figure>
-
-              </li>
-              <li><span class="title">"About"</span>
-                This section will describe the business concept of XXXL and who the persons behind the concept are. It will have a picture of the creators of the webstore and some text about their background. It will also describe why XXXL is the best alternative when shopping sports equipment online.
-
-                <figure><img src="img/about.png" alt="about"></figure>
-
-              </li>
-              <li><span class="title">"Categories"</span>
-                <ol>
-                  <li>"Football"</li>
-                  <li>"Running"</li>
-                  <li>"Tennis"</li>
-                </ol>
-                This section will give you three alternatives when clicking on it. When clicking one of the three alternatives the user will go to a page that shows pictures of available sports equipment in each category. It will have the price and a brief decscription of each item. When clicking a picture the picture will expand it it will display more information. This will be done using javasrcipt. If a user clicks on "add to cart" the item will be put in the cart. This will also be done with javascript
-
-                <figure><img src="img/Categories.png" alt="categories"></figure>
-
-              </li>
-
-              <li><span class="title">"Contact us"</span>
-                This page will contain an e-mail for customer support.
-                <figure><img src="img/contact_us.png" alt="Front page"></figure>
-              </li>
-              <li><span class="title">"Shopping Cart"</span>
-                This will show all the items the user has added to the shopping cart in that session, and the total price of all items in the shopping cart
-                <figure><img src="img/shopping_cart.png" alt="shopping cart"></figure>
-              </li>
-            </ol>
-            <div id = page_layout>
-                <h2>Page Layout and Appearance</h2>
-                <section>
-               <p></p>
-               <figure id='example_pic'><img src="img/about.png" alt="Page layout example" width="550"><figcaption>Page layout example</figcaption></figure>
-            <p>The specific styling for the website that will apply to all pages can be found below: </p>
-            <ul>
-              <li>Color scheme
-                <ul>
-                  <li>Text:White</li>
-                  <li>Background: Black</li>
-                  <!-- <li>Links: Yellow</li> -->
-                  <li>Picture borders; White,1px</li>
-                </ul>
-              </li>
-              <li>Body width: 800px</li>
-              <li>Links: all section names are clickable links</li>
-              <li>Banner: The banner is our logo: "XXXL- Some sports united"</li>
-              <li>Navbar position and appearance: The navbar is located right under the banner. It is black as well, white horizontal underline</li>
-            </ul>
-      </section>
-        </div>
-        <div id = min_requirements>
-            <h2>Minimum Requirements</h2>
-            <p>The website will contain five javascript-enabled functionailies to create a more dynamic and responsive website. We image the following scripts to work this way: <br>
-            <p>Torgeir and Audun will be responsible for the development of this script:</p>
-              <ul>
-                <li><u>image_script.js.</u> This script is responsible for enlarging a picture if a user clicks on it. Furthermore, there will also be some additional text displayed when this function is invoked. The text will contain a short description of some features of the respective product.  </li>
-                <li><u>shopping_cart.js</u> This script will dynamically update the shopping cart with the item the user wants. It will also contain code to remove certain items if demanded.</li>
-              </ul>
-              <p>Øystein and Per will be responsible for the development of this script:</p>
-              <ul>
-                <li><u>random_offers.js</u> A javascript function that determines which items that are displayed on the front page, as well as which that are on sale at the moment. </li>
-                <li><u>autofill_content</u> Will be responsible for creating more html content on a website. That is, we don't want to write all the html code ourself (which would be highly repatative work), but rather let javascript do this for us. We picture us that this function will provide all html pages with content </li>
-              </ul>
-              <p>Jakob will be responsible for the development of this script:</p>
-              <ul>
-                <li><u>form_validation</u> In the contact us page, we envision a html form capability such that users could send us their information. If we enable user input, we must ensure input-validation so that the input conforms with the intended format.</li>
-              </ul>
-            </p>
-        </div>
-        <div id = plan>
-            <h2>Plan</h2>
-            <p>Below, we have come up with a plan for the future workload. We will stick to this organizational scheme and work division for the future projects P3 and P4</p>
-            <h3>Organizational scheme</h3>
-            <p>The following list shows all the files that we will need for developing our website</p>
-            <ul>
-              <li>front_page.html</li>
-              <li>about.html</li>
-              <li>contact_us.html</li>
-              <li>shopping_cart.html</li>
-              <li>Categories/
-                <ul>
-                  <li>football.html</li>
-                  <li>running.html</li>
-                  <li>tennis.html</li>
-                </ul>
-              </li>
-              <li>images/
-                <ul>
-                  <li>header.png</li>
-                  <li>favicon.gif</li>
-                  <li>background_image.png</li>
-                  <li>content_1</li>
-                  <li>content_2</li>
-                  <li>...</li>
-                  <li>content_n</li>
-                </ul>
-              </li>
-              <li>scripts/
-                <ul>
-                  <li>image_script.js</li>
-                  <li>shopping_cart.js</li>
-                  <li>random_offers.js</li>
-                  <li>autofill_content.js</li>
-                  <li>form_validation.js</li>
-                  <li>...</li>
-                </ul>
-              </li>
-              <li>css/
-                <ul>
-                  <li>main.css</li>
-                </ul>
-              </li>
-            </ul>
-            <h3>Workload and deadlines</h3>
-            <table>
-              <thead>
-                <tr>
-                  <td>Filename</td>
-                  <td>Description</td>
-                  <td>In charge</td>
-                  <td>Deadline</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>front_page.html</td>
-                  <td>The opening page</td>
-                  <td>Audun</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>about.html</td>
-                  <td>Provides the user with information about the company.</td>
-                  <td>Øystein</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>contact_us.html</td>
-                  <td>Provides user with information on how to get in contact with us</td>
-                  <td>Jakob</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>shopping_cart.html</td>
-                  <td>The page where the user can see all items in the shopping cart</td>
-                  <td>Jakob</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>football.html</td>
-                  <td>Contains items related to football</td>
-                  <td>Jakob</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>running.html</td>
-                  <td>Contains items related to jogging and running</td>
-                  <td>Jakob</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>tennis.html</td>
-                  <td>Contains items related to tennis</td>
-                  <td>Jakob</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>image files</td>
-                  <td>Pictures of all items on the page</td>
-                  <td>Jakob</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>image_script.js</td>
-                  <td>A javascript file that will enlarge a picture in a pop up window when the user clicks on it</td>
-                  <td>Torgeir and Audun</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>shopping_cart.js</td>
-                  <td>Fills up the shopping cart with the items that is selected by the user</td>
-                  <td>Torgeir and Audun</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>random_offers.js</td>
-                  <td>Displays content that is on offers on the front page</td>
-                  <td>Per and Øystein</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>autofill_content.js</td>
-                  <td>Fills the relevant html files with content</td>
-                  <td>Per and Øystein</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>form_validation.js</td>
-                  <td>Validates the input in html forms</td>
-                  <td>Jakob</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-                <tr>
-                  <td>main.css</td>
-                  <td>Contains all the styling rules for all html pages</td>
-                  <td>Everyone</td>
-                  <td>10th of Novemeber</td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
-        <footer></footer>
     </body>
 </html>
