@@ -1,0 +1,47 @@
+h1 {
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body {
+  color : white;
+  background-color: black;
+  margin: 0 auto;
+  width: 800px;
+}
+
+#content img{
+  border: 1px solid white;
+  width: 100%
+
+}
+
+img {
+  width: 100%
+
+}
+p {
+  font-family: "Times New Roman";
+}
+li span{
+  display:block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+ table, th, td {
+ border: 1px solid white;
+
+ }
+
+ th,td {
+  padding: 5px;
+ }
+
+ table{
+ display: table;
+ border-collapse: separate;
+ border-spacing: 2px;
+ margin-bottom:20px;
+
+ }
